@@ -4,55 +4,205 @@
 <head>
     <meta charset="utf-8">
     <title>Profad FC Formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="formulariodeincricaoatleta">
  <!-- INICIO NAVBAR  -->
- <div class="navbar">
-    <ul class="listaNav">
-        <li><a class="linkNav" href="index.html">HOME</a></li>
-        <li><a class="linkNav" href="galeria.html">GALERIA</a></li>
-        <div class="dropdown">
-            <span class="linkNav">CATEGORIAS</span>
-                <div class="dropdownContent">
-                    <ul class="dropdownList">
-                        <li><a class="linkNav" href="sub20.html">SUB 20</a></li>
-                        <li><a class="linkNav" href="sub17.html">SUB 17</a></li>
-                        <li><a class="linkNav" href="sub15.html">SUB 15</a></li>
-                        <li><a class="linkNav" href="sub14.html">SUB 14</a></li>
-                        <li><a class="linkNav" href="sub11.html">SUB 11</a></li>
-                        <li><a class="linkNav" href="sub9.html">SUB 9</a></li>
-                        <li><a class="linkNav" href="timefeminino.html">TIME FEMININO</a></li>
+  <header>
+        <img src="assets\images\logo.png" width="120px" height="120px">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="formulario.html">SEJA UM ATLETA</a></li>
+            <div class="dropdown">
+                <span>CATEGORIAS</span>
+                <div class="dropdown-content">
+
+                    <ul>
+                        <li><a href="sub9.html">SUB 9</a></li>
+                        <li><a href="sub11.html">SUB 11</a></li>
+                        <li><a href="sub13.html">SUB 13</a></li>
+                        <li><a href="sub15.html">SUB 15</a></li>
+                        <li><a href="sub17.html">SUB 17</a></li>
+                        <li><a href="sub20.html">SUB 20</a></li>
+                        <li><a href="timefeminino.html">TIME FEMININO</a></li>
                     </ul>
+
                 </div>
-        </div>
-        <li><a class="linkNav" href="#">SOBRE NÓS</a></li>
-        <li><a class="linkNav" href="#">EVENTOS</a></li>
-    </ul>
-</div>
+                 <li><a class="linkNav" href="formulario.html">SEJA UM ATLETA</a></li>
+            </div>
+
+
+        </ul>
+    </nav>
+
 <!-- FIM NAVBAR-->
+
+  <section class="formulariodeincricao" id="formulario">
+
+    <legend name= seja><h3></h3></legend>
+    <div class="formularioderegistro"></div>
+   
+    <div class="conteudo">
+
+        <form action="mailto:profad.unidade.bm@gmail.com" method="post">
+
+        <fieldset class="fieldsetdoformularioatleta">
+
+            <legend class="legendadoformularioatleta"><h1>Cadastre-se aqui</h1></legend>
+
+            <br>
+
+            <label for="nome"><h2 class="nome">Nome Completo:</h2></label><br>
+            <input class="nomec" type="text" name="nome completo" id="nome" placeholder="Digite seu nome" required size="32"><br>
+            <br>
+
+            <label for="data"><h2 class="nome">Data do Nascimento:</h2></label><br>
+            <input class="datan" type="date" name="data do nascimento" id="data" required><br><br>
+
+            <label for="genero"><h2 class="nome">Gênero:</h2><br>
+            <select class="opcoesatleta" name="assunto" id="genero" required>
+
+                <option disabled="disabled" selected="selected">Selecione uma opçâo.</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+
+            </select></label><br><br>
+
+            <label for="posicao"><h2 class="nome">Posição:</h2><br>
+            <select class="opcoesatleta" name="assuntop" id="posicao" required>
+
+                <option disabled="disabled" selected="selected">Selecione uma opçâo.</option>
+                <option>Goleiro</option>
+                <option>Atacante</option>
+                <option>Zagueiro</option>
+                <option>Lateral</option>
+                <option>Meio</option>
+                <option>Volante</option>
+
+            </select></label><br><br>
+
+            <label for="emailt"><h2 class="nome">Endereço de e-mail:</h2></label><br>
+            <input class="endmailt" type="email" name="endemailt" id="emailt" placeholder="Digite aqui" required size="42"><br><br>
+
+            <label for="tele"><h2 class="nome">Número de telefone:</h2></label><br>
+            <input class="numetele" type="text" name="telefone" id="tele" placeholder="Digite aqui" required size="36">
+
+            <br><br><br><hr><br>
+
+            <label for="nomer"><h2 class="nome">Nome do responsável:</h2></label><br>
+            <input class="nomeresp" type="text" name="nome do responsavel" id="nomer" placeholder="Nome do responsável" required size="32"><br><br>
+
+            <label for="emailr"><h2 class="nome">Enderço de e-mail do responsável:</h2></label><br>
+            <input class="ednmailresp" type="email" name="endemailr" id="emailr" placeholder="E-mail do responsável" required size="42"><br><br>
+
+            <label for="telef"><h2 class="nome">Número de telefone do responsável:</h2></label><br>
+            <input class="tele" type="text" name="telefone" id="telef" placeholder="Digite seu número" required size="36">
+            <br><br><br>
+
+            <label><input type="submit" class="buttonsen" value="Enviar" id="enviar"></label>
+            <label><input type="reset" class="buttonslim" value="Limpar" id="limpar"></label><br><br>
+
+        </fieldset>
+
+        </form>
+
+     </div>
+
+</section>
+
+<br>
+
 <!-- SOCIAL MEDIA-->
-<div class="footer">
-    <div class="divSocial">
-        <a class="social" href="https://www.facebook.com/Profadfc/">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-        width="50" height="50"
-        viewBox="0 0 172 172"
-        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#00aeef"><path d="M86,10.32c-41.796,0 -75.68,33.884 -75.68,75.68c0,37.9432 27.95,69.27128 64.36928,74.74432v-54.68568h-18.72392v-19.89352h18.72392v-13.23712c0,-21.91624 10.67776,-31.53792 28.89256,-31.53792c8.72384,0 13.33688,0.64672 15.52128,0.94256v17.36512h-12.42528c-7.73312,0 -10.43352,7.33064 -10.43352,15.59352v10.87384h22.66272l-3.07536,19.89352h-19.58736v54.84736c36.93872,-5.01208 65.43568,-36.59472 65.43568,-74.906c0,-41.796 -33.884,-75.68 -75.68,-75.68z"></path></g></g></svg>
-        </a>
-        <a class="social" href="https://instagram.com/profad_fc?igshid=1d6lry1gikewe">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-        width="50" height="50"
-        viewBox="0 0 172 172"
-        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#00aeef"><path d="M57.33333,21.5c-19.78717,0 -35.83333,16.04617 -35.83333,35.83333v57.33333c0,19.78717 16.04617,35.83333 35.83333,35.83333h57.33333c19.78717,0 35.83333,-16.04617 35.83333,-35.83333v-57.33333c0,-19.78717 -16.04617,-35.83333 -35.83333,-35.83333zM129,35.83333c3.956,0 7.16667,3.21067 7.16667,7.16667c0,3.956 -3.21067,7.16667 -7.16667,7.16667c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.956 3.21067,-7.16667 7.16667,-7.16667zM86,50.16667c19.78717,0 35.83333,16.04617 35.83333,35.83333c0,19.78717 -16.04617,35.83333 -35.83333,35.83333c-19.78717,0 -35.83333,-16.04617 -35.83333,-35.83333c0,-19.78717 16.04617,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z"></path></g></g></svg></a>
+ <footer>
+        <div class="divSocial">
+            <a class="social" href="https://www.facebook.com/Profadfc/">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#00aeef">
+                            <path
+                                d="M86,10.32c-41.796,0 -75.68,33.884 -75.68,75.68c0,37.9432 27.95,69.27128 64.36928,74.74432v-54.68568h-18.72392v-19.89352h18.72392v-13.23712c0,-21.91624 10.67776,-31.53792 28.89256,-31.53792c8.72384,0 13.33688,0.64672 15.52128,0.94256v17.36512h-12.42528c-7.73312,0 -10.43352,7.33064 -10.43352,15.59352v10.87384h22.66272l-3.07536,19.89352h-19.58736v54.84736c36.93872,-5.01208 65.43568,-36.59472 65.43568,-74.906c0,-41.796 -33.884,-75.68 -75.68,-75.68z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="social" href="https://instagram.com/profad_fc?igshid=1d6lry1gikewe">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#00aeef">
+                            <path
+                                d="M57.33333,21.5c-19.78717,0 -35.83333,16.04617 -35.83333,35.83333v57.33333c0,19.78717 16.04617,35.83333 35.83333,35.83333h57.33333c19.78717,0 35.83333,-16.04617 35.83333,-35.83333v-57.33333c0,-19.78717 -16.04617,-35.83333 -35.83333,-35.83333zM129,35.83333c3.956,0 7.16667,3.21067 7.16667,7.16667c0,3.956 -3.21067,7.16667 -7.16667,7.16667c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.956 3.21067,-7.16667 7.16667,-7.16667zM86,50.16667c19.78717,0 35.83333,16.04617 35.83333,35.83333c0,19.78717 -16.04617,35.83333 -35.83333,35.83333c-19.78717,0 -35.83333,-16.04617 -35.83333,-35.83333c0,-19.78717 16.04617,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z">
+                            </path>
+                        </g>
+                    </g>
+                </svg></a>
 
-        <a class="social" href="https://api.whatsapp.com/send?phone=5521990566094&fbclid=IwAR2GX_KokiErtQqCFYjJ6LWIWHW4_xkcmMGaqRh1GmtxTjLZ39OdXwD9oqE"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-        width="50" height="50"
-        viewBox="0 0 172 172"
-        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#00aeef"><path d="M86,6.88c-43.62608,0 -79.12,35.49392 -79.12,79.12c0,13.6224 3.51912,27.01776 10.19272,38.8376l-10.06544,35.9136c-0.33024,1.17992 -0.01032,2.44584 0.8428,3.32304c0.65704,0.67768 1.55144,1.04576 2.46992,1.04576c0.2752,0 0.55384,-0.0344 0.8256,-0.09976l37.48224,-9.28456c11.44488,6.14384 24.33456,9.38432 37.37216,9.38432c43.62608,0 79.12,-35.49392 79.12,-79.12c0,-43.62608 -35.49392,-79.12 -79.12,-79.12zM125.8008,113.91904c-1.69248,4.68528 -9.81088,8.9612 -13.71184,9.53568c-3.50192,0.51256 -7.93264,0.73272 -12.7968,-0.79464c-2.94808,-0.9288 -6.73208,-2.16032 -11.57904,-4.22776c-20.37512,-8.68944 -33.68104,-28.9476 -34.69928,-30.28576c-1.0148,-1.33816 -8.29384,-10.87384 -8.29384,-20.7432c0,-9.86936 5.246,-14.7232 7.11048,-16.73216c1.86448,-2.00896 4.06264,-2.5112 5.418,-2.5112c1.35536,0 2.70728,0.0172 3.89408,0.07224c1.24872,0.06192 2.924,-0.47128 4.57176,3.44344c1.69248,4.01792 5.75512,13.88728 6.25736,14.8952c0.50912,1.00448 0.84624,2.17752 0.172,3.51568c-0.67424,1.33816 -1.01136,2.17408 -2.0296,3.34712c-1.01824,1.17304 -2.1328,2.6144 -3.04784,3.51568c-1.01824,1.00104 -2.07432,2.08464 -0.89096,4.0936c1.18336,2.00896 5.25976,8.57592 11.3004,13.89416c7.7572,6.83184 14.30352,8.95088 16.33312,9.95536c2.0296,1.00448 3.2164,0.83592 4.39976,-0.50224c1.18336,-1.3416 5.07744,-5.85832 6.42936,-7.86384c1.35192,-2.00552 2.70728,-1.67528 4.57176,-1.00448c1.86448,0.66736 11.8508,5.51776 13.8804,6.52224c2.0296,1.00448 3.38496,1.50672 3.89408,2.34264c0.50912,0.83248 0.50912,4.8504 -1.18336,9.53224z"></path></g></g></svg></a>
+            <a class="social"
+                href="https://api.whatsapp.com/send?phone=5521990566094&fbclid=IwAR2GX_KokiErtQqCFYjJ6LWIWHW4_xkcmMGaqRh1GmtxTjLZ39OdXwD9oqE"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#00aeef">
+                            <path
+                                d="M86,6.88c-43.62608,0 -79.12,35.49392 -79.12,79.12c0,13.6224 3.51912,27.01776 10.19272,38.8376l-10.06544,35.9136c-0.33024,1.17992 -0.01032,2.44584 0.8428,3.32304c0.65704,0.67768 1.55144,1.04576 2.46992,1.04576c0.2752,0 0.55384,-0.0344 0.8256,-0.09976l37.48224,-9.28456c11.44488,6.14384 24.33456,9.38432 37.37216,9.38432c43.62608,0 79.12,-35.49392 79.12,-79.12c0,-43.62608 -35.49392,-79.12 -79.12,-79.12zM125.8008,113.91904c-1.69248,4.68528 -9.81088,8.9612 -13.71184,9.53568c-3.50192,0.51256 -7.93264,0.73272 -12.7968,-0.79464c-2.94808,-0.9288 -6.73208,-2.16032 -11.57904,-4.22776c-20.37512,-8.68944 -33.68104,-28.9476 -34.69928,-30.28576c-1.0148,-1.33816 -8.29384,-10.87384 -8.29384,-20.7432c0,-9.86936 5.246,-14.7232 7.11048,-16.73216c1.86448,-2.00896 4.06264,-2.5112 5.418,-2.5112c1.35536,0 2.70728,0.0172 3.89408,0.07224c1.24872,0.06192 2.924,-0.47128 4.57176,3.44344c1.69248,4.01792 5.75512,13.88728 6.25736,14.8952c0.50912,1.00448 0.84624,2.17752 0.172,3.51568c-0.67424,1.33816 -1.01136,2.17408 -2.0296,3.34712c-1.01824,1.17304 -2.1328,2.6144 -3.04784,3.51568c-1.01824,1.00104 -2.07432,2.08464 -0.89096,4.0936c1.18336,2.00896 5.25976,8.57592 11.3004,13.89416c7.7572,6.83184 14.30352,8.95088 16.33312,9.95536c2.0296,1.00448 3.2164,0.83592 4.39976,-0.50224c1.18336,-1.3416 5.07744,-5.85832 6.42936,-7.86384c1.35192,-2.00552 2.70728,-1.67528 4.57176,-1.00448c1.86448,0.66736 11.8508,5.51776 13.8804,6.52224c2.0296,1.00448 3.38496,1.50672 3.89408,2.34264c0.50912,0.83248 0.50912,4.8504 -1.18336,9.53224z">
+                            </path>
+                        </g>
+                    </g>
+                </svg></a>
 
-    </div>
-</div>
+            <a class="social" href="https://www.youtube.com/channel/UCCT2LbT-UY671hBxbn583oA"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#00aeef">
+                            <path
+                                d="M154.671,44.333c-1.64833,-6.16333 -6.50733,-11.02233 -12.67067,-12.67067c-11.18,-2.99567 -56.00033,-2.99567 -56.00033,-2.99567c0,0 -44.82033,0 -56.00033,2.99567c-6.16333,1.64833 -11.02233,6.50733 -12.67067,12.67067c-2.99567,11.18 -2.99567,41.667 -2.99567,41.667c0,0 0,30.487 2.99567,41.667c1.64833,6.16333 6.50733,11.02233 12.67067,12.67067c11.18,2.99567 56.00033,2.99567 56.00033,2.99567c0,0 44.82033,0 56.00033,-2.99567c6.1705,-1.64833 11.02233,-6.50733 12.67067,-12.67067c2.99567,-11.18 2.99567,-41.667 2.99567,-41.667c0,0 0,-30.487 -2.99567,-41.667zM71.66667,110.82533v-49.65067l43,24.82533z">
+                            </path>
+                        </g>
+                    </g>
+                </svg></a>
+
+            <a class="social" href="https://twitter.com/profad_fc?s=20"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                    y="0px" width="60" height="60" viewBox="0 0 172 172" style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#00aeef">
+                            <path
+                                d="M172,30.82226c-6.4388,2.85547 -12.9056,5.01107 -20.07226,5.73894c7.16667,-4.3112 12.9056,-11.47787 15.76107,-19.3724c-7.16667,4.31119 -14.33333,7.16667 -22.19988,8.6224c-7.16667,-7.16667 -16.48893,-11.47787 -26.51106,-11.47787c-19.3724,0 -35.13347,15.76107 -35.13347,35.10547c0,2.88346 0,5.73893 0.72786,7.89453c-29.39453,-1.42774 -55.17773,-15.06119 -72.39453,-36.56119c-3.58333,5.03906 -5.01107,11.47786 -5.01107,17.91667c0,12.20573 6.43881,22.95573 15.76107,29.39453c-5.73893,-0.72786 -11.44987,-2.1556 -15.76107,-4.31119c0,0 0,0 0,0.72786c0,17.18881 12.17774,31.52214 27.93881,34.4056c-2.85547,0.69988 -5.71094,1.42774 -9.29427,1.42774c-2.1556,0 -4.3112,0 -6.4668,-0.72786c4.31119,14.33333 17.2168,24.38346 32.97786,24.38346c-12.17773,9.32227 -27.23893,15.03321 -43.72786,15.03321c-2.85547,0 -5.73893,0 -8.5944,-0.69988c15.76107,10.02214 34.4056,15.76107 53.75,15.76107c65.22787,0 100.33333,-53.75 100.33333,-100.33333c0,-1.42774 0,-2.85547 0,-4.31119c7.16667,-5.01107 12.9056,-11.44988 17.91667,-18.61654">
+                            </path>
+                        </g>
+                    </g>
+                </svg></a>
+
+
+        </div>
+
+    </footer>
 </body>
 </html>
